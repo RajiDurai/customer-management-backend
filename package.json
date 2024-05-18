@@ -1,0 +1,12 @@
+{
+  "name": "customer-management-backend-3.28.03-pm",
+  "version": "1.0.0",
+  "description": "To display a customer list based on filters set to customer's firstName, lastName and companyName",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
