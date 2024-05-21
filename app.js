@@ -1,10 +1,20 @@
+require("dotenv").config();
 const express = require('express'); 
-const customers = require('./customers'); 
+const cors = require('cors');
+//const customers = require('./customers'); 
+const dbCon = require("./dbCon");
+//import customer routes
+const customerRoutes = require("./routes/customers");
 
 // Initialize App 
 const app = express(); 
+dbCon();
 
-// Assign route for search
+app.use(express.json());
+app.use(cors());
+
+app.use("/api", customerRoutes);
+/* // Assign route for search
 app.use('/api/customers/search', (req, res, next) => { 
     const{name} = req.query;
     const filteredCustomers = customers.filter(
@@ -22,7 +32,7 @@ app.use('/api/customers/filter', (req, res) => {
       (customer) => customer.company.toLowerCase() === company.toLowerCase()
     );
     res.json(filteredCustomers);
-  });
+  }); */
 
 // Start server on PORT 5000 
 const PORT = process.env.PORT || 5000;
