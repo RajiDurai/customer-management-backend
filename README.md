@@ -1,6 +1,6 @@
 ## About the project
 ### customer-management-backend 
-To display a customer list based on filters set to customer's firstName, lastName and companyName. I used MERN tech stack creating the backend end in node, express and mongoose. The dependencies and work tasks are tracked in GITHUB issues url - [https://github.com/RajiDurai/customer-management-backend/issues](https://github.com/RajiDurai/customer-management-backend/issues).
+To display a customer list based on search set to customer's First Name or Last Name and filters set to Company Name. I have used MERN tech stack creating the backend end in node, express and mongoose. The dependencies installed and work tasks are tracked in GITHUB issues url - [https://github.com/RajiDurai/customer-management-backend/issues](https://github.com/RajiDurai/customer-management-backend/issues).
 I started this project by implementing the back end first and tested the api using POSTMAN inputting the endpoints and fetched test data from local mongo db set up.
 ### Breakdown of how I started the project:
 1. Create a repository in GHE
