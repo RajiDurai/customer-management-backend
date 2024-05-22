@@ -5,11 +5,11 @@ const dbCon = () => {
     mongoose.connect(process.env.DB, conParams);
 
     mongoose.connection.on("connected", () => {
-		console.log("Hurray, Connected to database sucessfully");
+		console.log("Hiyaaa, Connected to database sucessfully");
 	});
 
 	mongoose.connection.on("error", (err) => {
-		console.log("Oops eeror while connecting to database :" + err);
+		console.log("Oh no error while connecting to database :" + err);
 	});
 
 	mongoose.connection.on("disconnected", () => {
