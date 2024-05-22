@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+//set db connection 
 const dbCon = () => {
     const conParams = { useNewUrlParser: true , dbName : 'customerSchema'};// added here dbName after 5 hrs scratching my head
     mongoose.connect(process.env.DB, conParams);

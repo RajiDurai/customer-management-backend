@@ -1,5 +1,5 @@
 require("dotenv").config();
-const express = require('express'); 
+const express = require('express');
 const cors = require('cors');
 //const customers = require('./customers'); 
 const dbCon = require("./dbCon");
@@ -7,13 +7,17 @@ const dbCon = require("./dbCon");
 const customerRoutes = require("./routes/customers");
 
 // Initialize App 
-const app = express(); 
+const app = express();
+//call db
 dbCon();
-
+// use server
 app.use(express.json());
 app.use(cors());
 
+//root route
 app.use("/api", customerRoutes);
+
+//This is the first coding and testing done when the project is started
 /* // Assign route for search
 app.use('/api/customers/search', (req, res, next) => { 
     const{name} = req.query;
